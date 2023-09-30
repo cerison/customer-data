@@ -6,13 +6,13 @@ customer data management
 ==========USER INTERFACE GUIDELINES=========
 
 
-# CREDENTIAL--------
+## CREDENTIAL--------
 Sample credentials
     - USERNAME = "john"
     - PASSWORD = "123"
 
 
-# LOGIN--------
+## LOGIN--------
 login is required for the following features
     - add customers link in header
     - profile link in header
@@ -20,7 +20,7 @@ login is required for the following features
     - delete customers data
     - delete users
 
-# LOGOUT--------
+## LOGOUT--------
 once you logged into system login link will be disappeared
 
 # WORKING WITH FORMS--------
@@ -29,7 +29,7 @@ once you logged into system login link will be disappeared
 
 
 
------VALIDATION--------
-     -submit buttons are disabled if input data are in invalid format
-    -email in forms should be in correct format, if not error will pop out
-    -date in search customers should be in correct format, if not error will pop out
+## VALIDATION--------
+    - submit buttons are disabled if input data are in invalid format
+    - email in forms should be in correct format, if not error will pop out
+    - date in search customers should be in correct format, if not error will pop out

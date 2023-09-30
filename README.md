@@ -11,7 +11,6 @@ Sample credentials
     - USERNAME = "john"
     - PASSWORD = "123"
 
-
 ## LOGIN--------
 login is required for the following features
     - add customers link in header
@@ -23,11 +22,9 @@ login is required for the following features
 ## LOGOUT--------
 once you logged into system login link will be disappeared
 
-# WORKING WITH FORMS--------
+## WORKING WITH FORMS--------
     - add customers, update customers and register user forms use REACTIVE FORM MODULE
     - login uses TEMPLATE FORM MODULE
-
-
 
 ## VALIDATION--------
     - submit buttons are disabled if input data are in invalid format

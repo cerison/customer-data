@@ -6,29 +6,26 @@ customer data management
 ==========USER INTERFACE GUIDELINES=========
 
 
------CREDENTIAL--------
+# CREDENTIAL--------
 Sample credentials
-    USERNAME = "john"
-    PASSWORD = "123"
+    - USERNAME = "john"
+    - PASSWORD = "123"
 
 
------LOGIN--------
+# LOGIN--------
 login is required for the following features
-    -add customers link in header
-    -profile link in header
-    -update customers data
-    -delete customers data
-    -delete users
+    - add customers link in header
+    - profile link in header
+    - update customers data
+    - delete customers data
+    - delete users
 
-
------LOGOUT--------
+# LOGOUT--------
 once you logged into system login link will be disappeared
 
-
-
------WORKING WITH FORMS--------
-    #add customers, update customers and register user forms use REACTIVE FORM MODULE
-    #login uses TEMPLATE FORM MODULE
+# WORKING WITH FORMS--------
+    - add customers, update customers and register user forms use REACTIVE FORM MODULE
+    - login uses TEMPLATE FORM MODULE
 
 
 

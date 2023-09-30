@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "startFrontEnd": "cd public\\userInterface && npm start",
-    "startBackEnd": "node app.js",
+    "startBackEnd": "nodemon app.js",
     "start": "npm run startBackEnd | npm run startFrontEnd",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,6 @@
 # customer-data
-customer data management
-
+customer data management 
+This is full-stack application that uses Node.js and MongoDB in Backend and Angular in Frontend
 
 
 ==========USER INTERFACE GUIDELINES=========

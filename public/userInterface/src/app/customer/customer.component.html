@@ -1,0 +1,30 @@
+<div class="container">
+    <table class="table">
+        <tbody>
+            <tr>
+                <td><b>Name</b>: {{customer.name}}</td>
+            </tr>
+            <tr>
+                <td><b>Email</b>: {{customer.email}}</td>
+            </tr>
+            <tr>
+                <td><b>Orders</b>: </td>
+            </tr>
+            <tr *ngFor="let order of customer.orders">
+                <td>
+                    <div><b>Date</b>: {{order.date | date:"MM/dd/yyyy"}}</div>
+                    <div><b>Items</b>:
+                        <li *ngFor="let item of order.items">{{item.name}}</li>
+                    </div>
+                </td>
+            </tr>
+            <tr *ngIf="isLoggenIn">
+                <td>
+                    <button (click)="deleteCustomer()" class="next btn btn-danger btn-sm">delete</button>
+                    <button routerLink="/updatecustomer/{{customer._id}}"
+                        class="next btn btn-outline-info btn-sm">update</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

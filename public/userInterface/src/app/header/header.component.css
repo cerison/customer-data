@@ -1,0 +1,7 @@
+ul{
+    /* width: 50%; */
+    margin: auto;
+    text-align: center;
+    grid-template-columns: 150px 170px 180px 150px 150px;
+    justify-content: center;
+}

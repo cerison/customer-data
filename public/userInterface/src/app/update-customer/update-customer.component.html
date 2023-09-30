@@ -1,0 +1,29 @@
+<div class="container">
+    <form class="text-center border border-light p-5" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <p class="h4 mb-4">Update Customer</p>
+        <div class="form-row mb-4">
+            <label for="exampleSelect2" class="label mt-4">Name</label>
+            <input type="text" class="form-control" placeholder="Name" formControlName="name">
+        </div>
+        <label for="exampleSelect2" class="label">Email</label>
+        <input type="email" class="form-control" placeholder="E-mail" formControlName="email">
+        <div class="form-group">
+            <label for="exampleSelect2" class="label mt-4">Select items</label>
+            <select multiple="" class="form-select" id="exampleSelect2" formControlName="items">
+                <option value="Apple">Apple</option>
+                <option value="Mango">Mango</option>
+                <option value="Lays">Lays</option>
+                <option value="Pringles">Pringles</option>
+                <option value="Pepsi">Pepsi</option>
+                <option value="Nuts">Nuts</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Toothpaste">Toothpaste</option>
+                <option value="Vitamins">Vitamins</option>
+                <option value="Beverages">Beverages</option>
+                <option value="Watches">Watches</option>
+                <option value="Perfumes">Perfumes</option>
+            </select>
+        </div>
+        <button class="btn btn-info my-4 btn-block" type="submit" [disabled]="!profileForm.valid">Update</button>
+    </form>
+</div>

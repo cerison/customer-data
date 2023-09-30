@@ -1,0 +1,8 @@
+.container {
+    width: 40%;
+    margin: auto;
+    min-width: 450px;
+}
+.label{
+    float: left;
+}

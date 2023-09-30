@@ -1,0 +1,44 @@
+<section>
+    <h3>Customers List</h3>
+    <div class="search">
+        <div class="left">
+            <select class="form-select" id="select" [(ngModel)]="selectedCount" (change)="onChange($event)">
+                <option selected value="5">5 rows</option>
+                <option value="10">10 rows</option>
+                <option value="15">15 rows</option>
+            </select>
+        </div>
+        <div class="right">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control {{isError}}" (blur)="validateDate(input.value)" placeholder="Filter by mm/dd/yyyy" [(ngModel)]="query"
+                    #input aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-secondary" type="button" id="button-addon2"
+                    (click)="filterDocument(input.value)">Search</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cust of customers; let i = index">
+                    <th scope="row" routerLink="/customers/{{cust._id}}">{{i+counter}}</th>
+                    <td routerLink="/customers/{{cust._id}}">{{cust.name}}</td>
+                    <td routerLink="/customers/{{cust._id}}">{{cust.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="navigators">
+        <button class="prev btn btn-outline-info btn-sm" [disabled]="previsInvalid" type="button"
+            (click)="prev()">Prev</button>
+        <button class="next btn btn-outline-info btn-sm" [disabled]="nextisInvalid" type="button"
+            (click)="next()">Next</button>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+{
+  "name": "customerdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "startFrontEnd": "cd public\\userInterface && npm start",
+    "startBackEnd": "nodemon app.js",
+    "start": "npm run startBackEnd | npm run startFrontEnd",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NODE",
+    "EXPRESS",
+    "MONGOOSE"
+  ],
+  "author": "Chernet",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.7.1"
+  }
+}

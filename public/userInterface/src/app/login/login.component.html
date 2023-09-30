@@ -1,0 +1,34 @@
+<div class="container">
+    <form class="text-center border border-light p-5" action="#!" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+
+        <p class="h4 mb-4">Sign in</p>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control {{isUsername}}" id="floatingInput" placeholder="Username"
+                name="username" ngModel />
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control {{isPassword}}" id="floatingInput" placeholder="Password"
+                name="password" ngModel />
+            <label for="floatingInput">Password</label>
+        </div>
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                </div>
+            </div>
+            <div>
+                <a href="/login">Forgot password?</a>
+            </div>
+        </div>
+
+        <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+        <p>Not a member?
+            <a href="/register">Register</a>
+        </p>
+    </form>
+</div>

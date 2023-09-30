@@ -1,0 +1,13 @@
+<div class="container">
+    <form class="text-center border border-light p-5" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <p class="h4 mb-4">Sign up</p>
+        <div class="form-row mb-4">
+            <input type="text" placeholder="Name" class="form-control" formControlName="name">
+        </div>
+        <div class="form-row mb-4">
+            <input type="text" placeholder="Username" class="form-control" formControlName="username">
+        </div>
+        <input type="password" placeholder="Password" class="form-control" formControlName="password">
+        <button class="btn btn-info my-4 btn-block" type="submit" [disabled]="!profileForm.valid">Save</button>
+    </form>
+</div>

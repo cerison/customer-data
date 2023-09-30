@@ -1,0 +1,9 @@
+.container {
+    width: 40%;
+    margin: auto;
+    min-width: 450px;
+}
+.next{
+    float: right;
+    margin-right: 10px;
+}
